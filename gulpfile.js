@@ -13,9 +13,28 @@ gulp.task('html', function () {
     return gulp
         .src('src/**/*.html')
         .pipe(gulp.dest('./build'))
+});
+
+
+gulp.task('woff', function () {
+    return gulp
+        .src('src/fonts/*.woff')
+        .pipe(gulp.dest('./build/fonts'))
 })
 
-gulp.task('default', ['scss','html'], function(){
+gulp.task('png', function () {
+    return gulp
+        .src('src/img/*.png')
+        .pipe(gulp.dest('./build/img'));
+})
+
+gulp.task('ico', function () {
+    return gulp
+        .src('src/*.ico')
+        .pipe(gulp.dest('./build'));
+})
+
+gulp.task('default', ['scss','html', 'woff', 'png', 'ico'], function(){
     gulp.watch( 'src/**/*.scss', ['scss']);
     gulp.watch( 'src/**/*.html', ['html']);
 });

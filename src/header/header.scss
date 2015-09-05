@@ -1,0 +1,33 @@
+@import "../const";
+
+.header {
+	background: $header_main_color;
+	height: $header_height;
+	position: fixed; 
+	width: 100%;
+
+	&-logo{
+		background: $header_logo_color url(../img/logo.png) center center no-repeat;
+		cursor: pointer;
+		display: inline-block;
+		height: $header_height;
+		width: 160px;
+	}
+
+	&-menu{
+		@include ul_reset();
+		color: $header_text_color;
+		display: inline-block;
+		vertical-align: top;
+		&-item{
+			font-size: $header_font_size;
+			line-height: $header_height;
+			margin-right: 70px;
+			margin-left: 30px;
+			&:hover{
+				color: $header_text_hover_color;
+				cursor: pointer;
+			}
+		}
+	}
+}
