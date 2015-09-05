@@ -1,0 +1,15 @@
+{
+  "name": "dashboard",
+  "version": "0.1.0",
+  "description": "html training",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat-css": "^2.2.0",
+    "gulp-sass": "^2.0.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igor0ser/Dash.git"
+  },
+  "license": "ISC"
+}
