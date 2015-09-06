@@ -5,7 +5,8 @@
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-concat-css": "^2.2.0",
-    "gulp-sass": "^2.0.4"
+    "gulp-sass": "^2.0.4",
+    "gulp.spritesmith": "^4.0.0"
   },
   "repository": {
     "type": "git",

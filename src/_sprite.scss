@@ -1,0 +1,169 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$sprite-calendar-name: 'sprite_Calendar';
+$sprite-calendar-x: 0px;
+$sprite-calendar-y: 350px;
+$sprite-calendar-offset-x: 0px;
+$sprite-calendar-offset-y: -350px;
+$sprite-calendar-width: 50px;
+$sprite-calendar-height: 51px;
+$sprite-calendar-total-width: 60px;
+$sprite-calendar-total-height: 781px;
+$sprite-calendar-image: 'sprite.png';
+$sprite-calendar: (0px, 350px, 0px, -350px, 50px, 51px, 60px, 781px, 'sprite.png', 'sprite_Calendar', );
+$sprite-comments-name: 'sprite_Comments';
+$sprite-comments-x: 0px;
+$sprite-comments-y: 441px;
+$sprite-comments-offset-x: 0px;
+$sprite-comments-offset-y: -441px;
+$sprite-comments-width: 60px;
+$sprite-comments-height: 52px;
+$sprite-comments-total-width: 60px;
+$sprite-comments-total-height: 781px;
+$sprite-comments-image: 'sprite.png';
+$sprite-comments: (0px, 441px, 0px, -441px, 60px, 52px, 60px, 781px, 'sprite.png', 'sprite_Comments', );
+$sprite-dashboard-name: 'sprite_Dashboard';
+$sprite-dashboard-x: 0px;
+$sprite-dashboard-y: 80px;
+$sprite-dashboard-offset-x: 0px;
+$sprite-dashboard-offset-y: -80px;
+$sprite-dashboard-width: 50px;
+$sprite-dashboard-height: 50px;
+$sprite-dashboard-total-width: 60px;
+$sprite-dashboard-total-height: 781px;
+$sprite-dashboard-image: 'sprite.png';
+$sprite-dashboard: (0px, 80px, 0px, -80px, 50px, 50px, 60px, 781px, 'sprite.png', 'sprite_Dashboard', );
+$sprite-graph-name: 'sprite_Graph';
+$sprite-graph-x: 0px;
+$sprite-graph-y: 170px;
+$sprite-graph-offset-x: 0px;
+$sprite-graph-offset-y: -170px;
+$sprite-graph-width: 50px;
+$sprite-graph-height: 50px;
+$sprite-graph-total-width: 60px;
+$sprite-graph-total-height: 781px;
+$sprite-graph-image: 'sprite.png';
+$sprite-graph: (0px, 170px, 0px, -170px, 50px, 50px, 60px, 781px, 'sprite.png', 'sprite_Graph', );
+$sprite-icon-name: 'sprite_Icon';
+$sprite-icon-x: 0px;
+$sprite-icon-y: 0px;
+$sprite-icon-offset-x: 0px;
+$sprite-icon-offset-y: 0px;
+$sprite-icon-width: 40px;
+$sprite-icon-height: 40px;
+$sprite-icon-total-width: 60px;
+$sprite-icon-total-height: 781px;
+$sprite-icon-image: 'sprite.png';
+$sprite-icon: (0px, 0px, 0px, 0px, 40px, 40px, 60px, 781px, 'sprite.png', 'sprite_Icon', );
+$sprite-notes-name: 'sprite_Notes';
+$sprite-notes-x: 0px;
+$sprite-notes-y: 260px;
+$sprite-notes-offset-x: 0px;
+$sprite-notes-offset-y: -260px;
+$sprite-notes-width: 40px;
+$sprite-notes-height: 50px;
+$sprite-notes-total-width: 60px;
+$sprite-notes-total-height: 781px;
+$sprite-notes-image: 'sprite.png';
+$sprite-notes: (0px, 260px, 0px, -260px, 40px, 50px, 60px, 781px, 'sprite.png', 'sprite_Notes', );
+$sprite-profile-name: 'sprite_Profile';
+$sprite-profile-x: 0px;
+$sprite-profile-y: 625px;
+$sprite-profile-offset-x: 0px;
+$sprite-profile-offset-y: -625px;
+$sprite-profile-width: 38px;
+$sprite-profile-height: 54px;
+$sprite-profile-total-width: 60px;
+$sprite-profile-total-height: 781px;
+$sprite-profile-image: 'sprite.png';
+$sprite-profile: (0px, 625px, 0px, -625px, 38px, 54px, 60px, 781px, 'sprite.png', 'sprite_Profile', );
+$sprite-write-name: 'sprite_Write';
+$sprite-write-x: 0px;
+$sprite-write-y: 533px;
+$sprite-write-offset-x: 0px;
+$sprite-write-offset-y: -533px;
+$sprite-write-width: 51px;
+$sprite-write-height: 52px;
+$sprite-write-total-width: 60px;
+$sprite-write-total-height: 781px;
+$sprite-write-image: 'sprite.png';
+$sprite-write: (0px, 533px, 0px, -533px, 51px, 52px, 60px, 781px, 'sprite.png', 'sprite_Write', );
+$sprite-logo-name: 'sprite_logo';
+$sprite-logo-x: 0px;
+$sprite-logo-y: 719px;
+$sprite-logo-offset-x: 0px;
+$sprite-logo-offset-y: -719px;
+$sprite-logo-width: 55px;
+$sprite-logo-height: 62px;
+$sprite-logo-total-width: 60px;
+$sprite-logo-total-height: 781px;
+$sprite-logo-image: 'sprite.png';
+$sprite-logo: (0px, 719px, 0px, -719px, 55px, 62px, 60px, 781px, 'sprite.png', 'sprite_logo', );
+$spritesheet-width: 60px;
+$spritesheet-height: 781px;
+$spritesheet-image: 'sprite.png';
+$spritesheet-sprites: ($sprite-calendar, $sprite-comments, $sprite-dashboard, $sprite-graph, $sprite-icon, $sprite-notes, $sprite-profile, $sprite-write, $sprite-logo, );
+$spritesheet: (60px, 781px, 'sprite.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
