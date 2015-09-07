@@ -58,3 +58,4 @@ gulp.task('sprite', function() {
     spriteData.img.pipe(gulp.dest('./build/img/')); // путь, куда сохраняем картинку
     spriteData.css.pipe(gulp.dest('./src/')); // путь, куда сохраняем стили
 });
+
