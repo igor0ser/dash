@@ -1,0 +1,28 @@
+@import "../const";
+@import "../sprite";
+
+
+
+.sidebar{
+	background: $sidebar_background;
+	float: left;
+	position: fixed;
+	width: $sidebar_width;
+	height: 100%;
+	&-item{
+		height: 145px;
+		border: 1px solid red;
+		text-align: center;
+
+		&:first-child{
+			margin-top: $header_height;
+		}
+
+		&-icon{
+			margin: 50px auto;
+			@include sprite($sprite-dashboard);
+			background-image: $sprite_url
+
+		}
+	}
+}
