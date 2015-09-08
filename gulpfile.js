@@ -9,7 +9,7 @@ gulp.task('default', ['sprite', 'woff', 'jpg', 'ico', 'scss','html'], function()
 });
  
 gulp.task('scss', function () {
-  return gulp.src('src/**/*.scss')
+  return gulp.src('src/main.scss')
   .pipe(sass().on('error', sass.logError))
     .pipe(concatCss("main.css"))
     .pipe(gulp.dest('build/'));
@@ -45,7 +45,7 @@ gulp.task('sprite', function() {
         gulp.src('./src/img/sprite/*.png') // путь, откуда берем картинки для спрайта
             .pipe(spritesmith({
                 imgName: 'sprite.png',
-                cssName: '_sprite.scss',
+                cssName: 'sprite.scss',
                 cssFormat: 'scss',
                 algorithm: 'top-down',
                 padding: 40,
@@ -55,7 +55,7 @@ gulp.task('sprite', function() {
  
             }));
 
-    spriteData.img.pipe(gulp.dest('./build/img/')); // путь, куда сохраняем картинку
-    spriteData.css.pipe(gulp.dest('./src/')); // путь, куда сохраняем стили
+    spriteData.img.pipe(gulp.dest('./src/img/')); // путь, куда сохраняем картинку
+    spriteData.css.pipe(gulp.dest('./src/source/')); // путь, куда сохраняем стили
 });
 

@@ -1,27 +1,49 @@
-@import "../const";
-@import "../sprite";
-
-
-
 .sidebar{
 	background: $sidebar_background;
 	float: left;
 	position: fixed;
 	width: $sidebar_width;
 	height: 100%;
+	padding-top: $header_height+20;
+
 	&-item{
-		height: 145px;
-		border: 1px solid red;
+		height: 110px;
 		text-align: center;
+		cursor: pointer;
+		position: relative;
+		&.active::after{
+			content: '';
+			position: absolute;
+			border: 20px solid transparent;	
+			border-right: 20px solid #fff;
+			top: 5px;
+			right: 0;
 
-		&:first-child{
-			margin-top: $header_height;
 		}
-
 		&-icon{
 			margin: 50px auto;
 			@include sprite($sprite-dashboard);
-			background-image: $sprite_url
+			
+
+			&-profile{
+				@include sprite($sprite-profile);
+			}
+			&-write{
+				@include sprite($sprite-write);
+			}
+			&-calendar{
+				@include sprite($sprite-calendar);
+			}
+			&-notes{
+				@include sprite($sprite-notes);
+			}
+			&-comments{
+				@include sprite($sprite-comments);
+			}
+			&-graph{
+				@include sprite($sprite-graph);
+			}
+
 
 		}
 	}
