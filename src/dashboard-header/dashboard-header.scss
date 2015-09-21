@@ -1,0 +1,25 @@
+.dashboard{
+	padding-left: $sidebar_width;
+	width: 2600px - $sidebar_width;
+	background: $dashboard_header_background;
+}
+
+.dashboard-header{
+	color: #6d737b;
+	font-family: 'Avenir Medium';
+	font-size: 26px;
+	height: 144px;
+	line-height: 150px;
+	padding-left: 80px;
+	box-shadow: 0px 2px 4px 0px rgba(85,85,85,0.4);
+	background: #fff;
+	z-index: 7;
+	margin-bottom: 4px;
+
+	&-cogwheel{
+		@include sprite($sprite-cogwheel);
+		display: inline-block;
+		margin-top: -5px;
+		vertical-align: middle;
+	}
+}

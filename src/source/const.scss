@@ -1,22 +1,31 @@
 //colors
 
+	//background colors
 $header_main_color: #36393c;
 $header_logo_color: #202327;
-$header_text_color: #8a929c;
-$header_text_hover_color: #ced2d9;
 $header_search_color: #4c5055;
 $sidebar_background:  #9dbd71;
-$border-color: #d66343;
+$border_color: #d66343;
+$dashboard_header_background: #fff;
+$dashboard_statistics_background: #f6f6f6;
 
-//sizes
+
+	//text colors
+
+$header_text_color: #8a929c;
+$header_text_hover_color: #ced2d9;
+$dashboard_text_color: #6d737b;
+$dashboard_text_color_light: #bec1c6;
+
+	//sizes
 
 $header_height: 135px;
 $sidebar_width: 160px;
 
 
-//fonts
+	//fonts
 $header_font_size: 20px;
 
 
-//url
+	//url
 $sprite_url: url('img/sprite.png');

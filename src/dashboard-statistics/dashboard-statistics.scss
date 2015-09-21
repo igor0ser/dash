@@ -1,0 +1,43 @@
+.dashboard-statistics{
+	@include ul-reset();
+	display: block;
+	background: $dashboard_statistics_background;
+	height: 200px;
+	overflow: hidden;
+	box-sizing: border-box;
+
+
+	&-item{
+		width: 395px;
+		height: 113px;
+		border-left: 6px solid $sidebar_background;
+		margin: 42px -4px 50px;
+		padding-left: 40px; 
+		padding-top: 10px;
+		box-sizing: border-box;
+		font-family: 'Avenir Roman';
+
+		&:first-child{
+			margin-left: 71px;
+		}
+
+		&.hours{
+			border-left-color: #4e7d7c;
+		}
+
+		&.fails{
+			border-left-color: #d2592a;
+		}
+
+		&-number{
+			font-size: 50px;
+			color: $dashboard_text_color;
+		}
+
+		&-text{
+			color: $dashboard_text_color_light;
+			font-size: 22px;
+		}
+
+	}
+}

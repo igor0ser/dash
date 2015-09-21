@@ -1,13 +1,11 @@
 .header {
 	background: $header_main_color;
 	height: $header_height;
-	position: fixed; 
 	width: 100%;
-	min-width: 1900px;
+	min-width: 2600px;
+
 
 	&-logo{
-		// background: $header_logo_color $sprite_url 
-		// 			$sprite-logo-offset-x+51px $sprite-logo-offset-y+36px no-repeat;
 		cursor: pointer;
 		display: inline-block;
 		height: $header_height;

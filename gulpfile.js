@@ -3,9 +3,9 @@ var concatCss = require('gulp-concat-css');
 var sass = require('gulp-sass');
 var spritesmith = require('gulp.spritesmith');
 
-gulp.task('default', ['sprite', 'woff', 'jpg', 'ico', 'scss','html'], function(){
-    gulp.watch( 'src/**/*.scss', ['scss']);
-    gulp.watch( 'src/**/*.html', ['html']);
+gulp.task('default', ['sprite', 'woff', 'jpg', 'ico', 'scss','html', 'github-io'], function(){
+    gulp.watch( 'src/**/*.scss', ['scss', 'github-io']);
+    gulp.watch( 'src/**/*.html', ['html', 'github-io']);
 });
  
 gulp.task('scss', function () {
@@ -55,7 +55,13 @@ gulp.task('sprite', function() {
  
             }));
 
-    spriteData.img.pipe(gulp.dest('./src/img/')); // путь, куда сохраняем картинку
+    spriteData.img.pipe(gulp.dest('./build/img/')); // путь, куда сохраняем картинку
     spriteData.css.pipe(gulp.dest('./src/source/')); // путь, куда сохраняем стили
 });
 
+
+gulp.task('github-io', function () {
+    return gulp
+        .src('build/*/*')
+        .pipe(gulp.dest('../igor0ser.github.io'));
+})
