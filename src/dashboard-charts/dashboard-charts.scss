@@ -1,0 +1,80 @@
+.dashboard-charts{
+		padding-left: 70px;
+		background: $dashboard_background;
+		height: 750px;
+
+	&-item{
+		background: $dashboard_background;
+		box-sizing: border-box;
+		float: left;
+		height: 750px;
+		padding-right: 60px;
+		padding-top: 60px;
+		width: 1180px;
+
+		&-header{
+			color: $dashboard_text_color;
+			font-family: 'Avenir Medium';
+			font-size: 28px;
+			margin-bottom: 80px;
+		}
+
+		&-menu{
+			@include ul-reset();
+			margin-top: 10px;
+			border-radius: 4px;
+			border: 1px solid #dededd;
+			display: block;
+			float: right;
+			height: 40px;
+			overflow: hidden;
+			transition: 0.4s;
+			width: 100px;
+
+			li{
+				display: block;
+			}
+
+			&-item{
+				color: $dashboard_text_color_light;
+				cursor: pointer;
+				display: block;
+				font-family: 'Avenir Medium';
+				font-size: 16px;
+				height: 40px;
+				line-height: 40px;
+				padding-left: 20px;
+				position: relative;
+
+				&:hover{
+					background: #dededd;	
+				}
+
+				&.active::after{
+					content: "\f0d7";
+					display: block;
+					position: absolute;
+					top: 0;
+					right: 12px;
+					font-family: "FontAwesome";
+				}
+
+			}
+
+			&:hover{
+				height: 120px;
+
+				& .active::after{
+					content: "\f0d8";
+				}
+			}
+
+		}
+
+		&-canvas{
+			height: 500px;
+			width: 1120px;
+		}
+
+	}
+}

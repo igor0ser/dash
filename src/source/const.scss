@@ -8,6 +8,7 @@ $sidebar_background:  #9dbd71;
 $border_color: #d66343;
 $dashboard_header_background: #fff;
 $dashboard_statistics_background: #f6f6f6;
+$dashboard_background: #f2f2f3;
 
 
 	//text colors
@@ -21,6 +22,7 @@ $dashboard_text_color_light: #bec1c6;
 
 $header_height: 135px;
 $sidebar_width: 160px;
+$dashboard_width: 2600px - $sidebar_width;
 
 
 	//fonts

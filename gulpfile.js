@@ -3,9 +3,10 @@ var concatCss = require('gulp-concat-css');
 var sass = require('gulp-sass');
 var spritesmith = require('gulp.spritesmith');
 
-gulp.task('default', ['sprite', 'woff', 'jpg', 'ico', 'scss','html', 'github-io'], function(){
+gulp.task('default', ['sprite', 'woff', 'js', 'jpg', 'ico', 'scss','html', 'github-io'], function(){
     gulp.watch( 'src/**/*.scss', ['scss', 'github-io']);
     gulp.watch( 'src/**/*.html', ['html', 'github-io']);
+    gulp.watch( 'src/**/*.js', ['js', 'github-io']);
 });
  
 gulp.task('scss', function () {
@@ -34,10 +35,16 @@ gulp.task('ico', function () {
         .pipe(gulp.dest('./build'));
 })
 
+gulp.task('js', function () {
+    return gulp
+        .src('src/*.js')
+        .pipe(gulp.dest('./build'));
+})
+
 gulp.task('jpg', function () {
     return gulp
-        .src('src/img/*.jpg')
-        .pipe(gulp.dest('./build/img'));
+        .src('src/*.js')
+        .pipe(gulp.dest('./build'));
 })
 
 gulp.task('sprite', function() {
@@ -62,6 +69,6 @@ gulp.task('sprite', function() {
 
 gulp.task('github-io', function () {
     return gulp
-        .src('build/*/*')
+        .src('build/**/*.*')
         .pipe(gulp.dest('../igor0ser.github.io'));
 })

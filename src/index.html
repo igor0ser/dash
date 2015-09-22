@@ -68,8 +68,24 @@
 			</li>
 		</ul>
 		<div class="dashboard-charts clearfix">
-			<section class="dashboard-charts-chart">Chart1</section>
-			<section class="dashboard-charts-chart">Chart2</section>
+			<section class="dashboard-charts-item">
+				<ul class="dashboard-charts-item-menu">
+					<li class="dashboard-charts-item-menu-item active">Daily</li>
+					<li class="dashboard-charts-item-menu-item">Monthly</li>
+					<li class="dashboard-charts-item-menu-item">Yearly</li>
+				</ul>
+				<h1 class="dashboard-charts-item-header">Active players</h1>
+				<canvas class="dashboard-charts-item-canvas"id="chart1"></canvas>
+			</section>
+			<section class="dashboard-charts-item">
+				<ul class="dashboard-charts-item-menu">
+					<li class="dashboard-charts-item-menu-item active">Daily</li>
+					<li class="dashboard-charts-item-menu-item">Monthly</li>
+					<li class="dashboard-charts-item-menu-item">Yearly</li>
+				</ul>
+				<h1 class="dashboard-charts-item-header">Active tournaments</h1>
+				<canvas class="dashboard-charts-item-canvas" id="chart2"></canvas>
+			</section>
 		</div>
 		<div class="dashboard-players clearfix">
 			<section class="dashboard-players-recent">Recent players</section>
@@ -78,8 +94,9 @@
 	</main>
 
 
+<script src="chart.js"></script>
+<script src="main.js"></script>
+
+
 </body>
-
-
-
 </html>

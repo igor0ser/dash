@@ -1,10 +1,5 @@
-.dashboard{
-	padding-left: $sidebar_width;
-	width: 2600px - $sidebar_width;
-	background: $dashboard_header_background;
-}
-
 .dashboard-header{
+	background: $dashboard_header_background;
 	color: #6d737b;
 	font-family: 'Avenir Medium';
 	font-size: 26px;
