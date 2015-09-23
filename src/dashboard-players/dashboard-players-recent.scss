@@ -1,0 +1,49 @@
+.dashboard-players-recent{
+	border: 1px solid green;
+	float: left;
+	height: $dashboard_players_height;
+	margin-right: 15px;
+	padding-left: 70px;
+	width: 1270px;
+
+	&-header{
+		color: $dashboard_text_color;
+		font-family: 'Avenir Medium';
+		font-size: 28px;
+		margin-bottom: 65px;
+	}
+
+	&-list{
+		@include ul-reset();
+		display: block;
+		
+		&-item{
+			height: 150px;
+			margin-right: -4px;
+			width: 400px;
+
+			&-img{
+				border-radius: 50%;
+				float: left;
+				height: 92px;
+				width: 92px;
+			}
+
+			&-text{
+				color: $dashboard_text_color_light;
+				float: left;
+				margin-left: 30px;
+
+				&-name{
+					font-size: 23px;
+					line-height: 54px;
+				}
+
+				&-country{
+					font-style: 23px;
+					line-height: 23px;
+				}
+			}
+		}
+	}
+}
