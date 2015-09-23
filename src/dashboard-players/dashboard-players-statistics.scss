@@ -1,3 +1,18 @@
 .dashboard-players-statistics{
-	
+	float: right;
+	height: $dashboard_players_height;
+	width: 1160px;
+
+
+	&-header{
+		color: $dashboard_text_color;
+		font-family: 'Avenir Medium';
+		font-size: 28px;
+		margin-bottom: 65px;
+	}
+
+	&-list-item{
+		width: 230px;
+		height: 330px;
+	}
 }

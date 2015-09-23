@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Dashboard</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+	<link rel="stylesheet" href="normalize.css">
 	<link rel="stylesheet" href="main.css">
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 <body>
@@ -89,6 +90,10 @@
 		</div>
 		<div class="dashboard-players clearfix">
 			<section class="dashboard-players-recent">
+				<div class="dashboard-players-recent-nav">
+					<a href="" class="dashboard-players-recent-nav-item prev">x</a>
+					<a href="" class="dashboard-players-recent-nav-item next">x</a>
+				</div>
 				<h2 class="dashboard-players-recent-header">Recent players</h2>
 				<ul class="dashboard-players-recent-list">
 					<li class="dashboard-players-recent-list-item">
@@ -156,7 +161,12 @@
 					</li>
 				</ul>
 			</section>
-			<section class="dashboard-players-statistics"></section>
+			<section class="dashboard-players-statistics">
+				<h2 class="dashboard-players-statistics-header">Player statistics</h2>
+				<div class="dashboard-players-statistics-list">
+					<div class="dashboard-players-statistics-list-item"></div>
+				</div>
+			</section>
 		</div>
 	</main>
 

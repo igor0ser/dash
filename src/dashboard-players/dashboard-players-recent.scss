@@ -1,16 +1,43 @@
 .dashboard-players-recent{
-	border: 1px solid green;
 	float: left;
 	height: $dashboard_players_height;
-	margin-right: 15px;
+	margin-right: 5px;
 	padding-left: 70px;
-	width: 1270px;
+	width: 1200px;
+	position: relative;
+
 
 	&-header{
 		color: $dashboard_text_color;
 		font-family: 'Avenir Medium';
 		font-size: 28px;
 		margin-bottom: 65px;
+	}
+
+	&-nav{
+		margin-top: 10px;
+		border-radius: 4px;
+		border: 1px solid #dededd;
+		display: block;
+		float: right;
+		height: 40px;
+		overflow: hidden;
+		width: 100px;
+
+
+
+		&-item{
+			display: inline-block;
+			line-height: 40px;
+			margin-right: -5px;
+			text-align: center;
+			text-decoration: none;
+			width: 50%;
+
+			&.prev{
+				border-right: 1px solid #dededd;
+			}
+		}
 	}
 
 	&-list{
