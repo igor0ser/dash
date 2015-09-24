@@ -3,7 +3,7 @@ var concatCss = require('gulp-concat-css');
 var sass = require('gulp-sass');
 var spritesmith = require('gulp.spritesmith');
 
-gulp.task('default', ['sprite', 'woff', 'css', 'js', 'jpg', 'ico', 'scss','html', 'github-io'], function(){
+gulp.task('default', ['sprite', 'woff', 'css', 'js', 'jpg', 'ico', 'scss','html'], function(){
     gulp.watch( 'src/**/*.scss', ['scss', 'github-io']);
     gulp.watch( 'src/**/*.html', ['html', 'github-io']);
     gulp.watch( 'src/**/*.js', ['js', 'github-io']);
